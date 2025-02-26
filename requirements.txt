@@ -1,6 +1,0 @@
-Django==3.2.7
-django-prometheus==2.1.0
-
-# Develop
-prospector==1.5.0.1              # python linter
-yapf==0.31.0                   # python formater

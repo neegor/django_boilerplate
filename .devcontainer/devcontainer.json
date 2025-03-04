@@ -3,9 +3,9 @@
 // for DOCKER COMPOSE: https://code.visualstudio.com/docs/devcontainers/create-dev-container#_use-docker-compose
 
 {
-	"name": "Metrasensor",
+	"name": "Hello",
 	"dockerComposeFile": "../docker-compose.yml",
-	"service": "mtr-django",
+	"service": "hello-django",
 	"workspaceFolder": "/workspace",
 	"shutdownAction": "stopCompose"
 }

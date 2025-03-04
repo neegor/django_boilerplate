@@ -33,7 +33,7 @@ services:
 
   django_app:
     <<: *hello-app
-    container_name: grd-django
+    container_name: hello-django
     command: python manage.py runserver 0.0.0.0:8000
     ports:
       - 8000:8000

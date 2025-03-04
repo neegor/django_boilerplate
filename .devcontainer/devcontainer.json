@@ -1,24 +1,11 @@
-// For format details, see https://aka.ms/vscode-remote/devcontainer.json or this file's README at:
-// https://github.com/microsoft/vscode-dev-containers/tree/v0.101.1/containers/docker-existing-docker-compose
-// If you want to run as a non-root user in the container, see .devcontainer/docker-compose.yml.
-{
-	"name": "HelloWorldCloud",
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/python
+// for DOCKER COMPOSE: https://code.visualstudio.com/docs/devcontainers/create-dev-container#_use-docker-compose
 
-	"dockerComposeFile": [
-		"..\\docker-compose.yaml",
-		"docker-compose.yml"
-	],
-	"service": "helloworld",
+{
+	"name": "Metrasensor",
+	"dockerComposeFile": "../docker-compose.yml",
+	"service": "mtr-django",
 	"workspaceFolder": "/workspace",
-	"settings": { 
-		"terminal.integrated.shell.linux": "/bin/bash"
-	},
-	"extensions": [
-		"ms-ceintl.vscode-language-pack-ru",
-		"ms-python.python",
-		"eamodio.gitlens",
-		"visualstudioexptteam.vscodeintellicode"
-	],
-	"postCreateCommand": "chmod 600 /home/app/.ssh/id_rsa",
-	"remoteUser": "app"
+	"shutdownAction": "stopCompose"
 }

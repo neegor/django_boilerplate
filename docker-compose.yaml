@@ -20,11 +20,11 @@ services:
       - hello-postgres-data:/var/lib/postgresql/data/pgdata
     environment:
       - PGDATA=/var/lib/postgresql/data/pgdata
-      - POSTGRES_DB=k8grid
-      - POSTGRES_USER=grduser
-      - POSTGRES_PASSWORD=grdpsw
+      - POSTGRES_DB=hello
+      - POSTGRES_USER=hellouser
+      - POSTGRES_PASSWORD=hellopsw
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -d k8grid -U grduser"]
+      test: ["CMD-SHELL", "pg_isready -d k8grid -U hellouser"]
       interval: 10s
       timeout: 5s
       retries: 5

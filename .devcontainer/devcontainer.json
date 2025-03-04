@@ -3,7 +3,7 @@
 // for DOCKER COMPOSE: https://code.visualstudio.com/docs/devcontainers/create-dev-container#_use-docker-compose
 
 {
-	"name": "Hello",
+	"name": "Django Boilerplate",
 	"dockerComposeFile": "../docker-compose.yml",
 	"service": "hello-django",
 	"workspaceFolder": "/workspace",

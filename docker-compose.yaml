@@ -1,6 +1,6 @@
 version: "3.9"
 
-x-grd:
+x-hello:
   &hello-app
   build:
     context: .
@@ -8,7 +8,6 @@ x-grd:
     target: develop
   tty: true
   restart: unless-stopped
-
 
 services:
 
@@ -24,7 +23,7 @@ services:
       - POSTGRES_USER=hellouser
       - POSTGRES_PASSWORD=hellopsw
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -d k8grid -U hellouser"]
+      test: ["CMD-SHELL", "pg_isready -d hello -U hellouser"]
       interval: 10s
       timeout: 5s
       retries: 5

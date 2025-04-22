@@ -21,7 +21,7 @@ ruff = "^0.11.0"
 
 [tool.poetry.group.production.dependencies]
 gunicorn = "^23.0.0"
-gevent = "^24.11.1"
+gevent = "^25.4.1"
 
 [build-system]
 requires = ["poetry-core"]
